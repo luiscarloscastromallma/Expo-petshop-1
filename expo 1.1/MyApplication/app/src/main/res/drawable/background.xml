@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:drawable="@android:color/background_light" />
+    <item
+        android:gravity="center_vertical"
+        android:height="350dp"
+        android:left="30dp"
+        android:right="50dp"
+         android:drawable="@drawable/pet1"
+
+
+        >
+    </item>
+</layer-list>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".models.Detalle2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#252424"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="BRIT CARE CAT CRAZY KITTEN 2KG" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gato5" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:textColor="#252424"
+                android:textSize="20dp"
+                android:text="DESCRIPCION :" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                android:text="Alimento Super Premium Hipoalergénico
+Fórmula de Pollo y Arroz para gatitos (1-12 meses)
+Mi nombre es Crazy y nací hace tres meses. En poco tiempo, me encontré con mi nueva familia. Tengo mi propia cama, un árbol para gatos, una caja de arena, un loro y un ser humano que me cuida cada día. Él sabe que estoy creciendo rápido y necesito una comida rica en proteínas, con nutrientes y vitaminas para el desarrollo saludable de mis músculos, sentidos y sistema inmunológico. Todos los días bajo de mi árbol para recibir una generosa porción. Sé que mi amo velará porque crezca como un gato sano y fuerte." />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

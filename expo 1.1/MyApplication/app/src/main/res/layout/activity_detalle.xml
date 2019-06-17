@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".models.DetalleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#252424"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="Equilibrio Adult All breeds Cats 500g" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gato4" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:textColor="#252424"
+                android:textSize="20dp"
+                android:text="DESCRIPCION :" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                android:text="FOS, MOS y Probioticos
+Auxilia en el equilibrio de la ­flora intestinal
+Hairball
+Combinación de ingredientes que previenen la acumulación
+de pelotas de pelo en el tracto digestivo
+Control del pH urinario
+Auxilia en el mantenimiento de la salud del tracto urinario
+Ingredientes:
+Carne mecánicamente separada de pollo, Arroz medio grano, Harina de Pescado, Harina de menudos de pollo, Maíz integral molido**, Afrecho de gluten de maíz 60**, Celulose en polvo, Levadura seca de cervecería, Hígado de pollo, Semilla de linaza, Grasa de pollo (preservada con tocoferol y esencia de romero), Hidrolizado de pollo y/o subproductos, Aceite de pescado refinado, Pulpa de remolacha, Inulina, Fosfato dicálcico, Cloruro de colina, DL-metionina, Taurina , Cloruro de Sodio (sal común), Manano-oligosacáridos, Probiótico, Bisulfato de sodio, Aceite mineral, Psyllium , Cloruro de potasio, Extracto de Yucca schidigera, Hexametafosfato de Sodio, Suplemento vitamínico, Suplemento micromineral transquelatado.
+
+**Agrobacterium tumefaciens, Bacillus thuringiensis, Streptomyces viridochromogenes, Zea mays." />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
