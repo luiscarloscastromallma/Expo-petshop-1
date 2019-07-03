@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main3Activity"></activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Main3Activity" />
         <activity
             android:name=".SplashScreennActivity"
             android:theme="@style/SplashScreenTheme">
@@ -20,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Product" />
         <activity android:name=".models.DetalleActivity" />
         <activity android:name=".models.Detalle2Activity" />
         <activity android:name=".models.Detalle3Activity" />

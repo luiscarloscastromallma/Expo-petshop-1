@@ -1,8 +1,6 @@
 package com.example.alumno.myapplication.activities;
 
 import android.content.Intent;
-import android.renderscript.Sampler;
-import android.service.autofill.Validators;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,14 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.alumno.myapplication.Main2Activity;
+import com.example.alumno.myapplication.NavigationDrawer;
+import com.example.alumno.myapplication.Product;
 import com.example.alumno.myapplication.R;
-import com.example.alumno.myapplication.models.DetalleActivity;
 import com.example.alumno.myapplication.models.User;
 
 import java.util.ArrayList;
-
-import javax.xml.validation.Validator;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -61,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(LoginActivity.this, Main2Activity.class);
+                Intent x = new Intent(LoginActivity.this, NavigationDrawer.class);
                 LoginActivity.this.startActivity(x);
 
             }

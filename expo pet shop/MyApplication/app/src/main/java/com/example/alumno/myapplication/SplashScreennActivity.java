@@ -14,7 +14,7 @@ public class SplashScreennActivity extends AppCompatActivity {
         Intent o = new Intent(this, LoginActivity.class);
         startActivity(o);
         try {
-            Thread.sleep (5000);
+            Thread.sleep (1000);
         }
         catch (Exception e) {
             finish();
