@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.petshop.MainActivity;
 import com.example.petshop.R;
@@ -24,13 +25,13 @@ import com.example.petshop.models.Product;
 import java.util.List;
 
 public class ProductItemAdapters extends ArrayAdapter<Product> {
-Context context;
+    Context context;
 
 
     private class ViewHolder {
         TextView name;
         TextView Description;
-        Button monto;
+        Button btnproducto;
 
         private ViewHolder(){
         }
@@ -47,17 +48,28 @@ Context context;
             convertView = mInflater.inflate(R.layout.adapter_product_item,null);
             holder = new ViewHolder();
             holder.name = (TextView) convertView.findViewById(R.id.name);
-          //  holder.monto = (Button) convertView.findViewById(R.id.monto);
+            //  holder.monto = (Button) convertView.findViewById(R.id.monto);
             holder.Description = (TextView) convertView.findViewById(R.id.Description);
+            holder.btnproducto = (Button) convertView.findViewById(R.id.btnproducto);
 
-       //     holder.monto = (Button) convertView.findViewById(R.id.monto);
+            //     holder.monto = (Button) convertView.findViewById(R.id.monto);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
         holder.name.setText(rowItem.getName());
         holder.Description.setText(rowItem.getDescription());
-      //   holder.monto.setText(rowItem.setMonto(boolean)+ "hh");
+        //   holder.monto.setText(rowItem.setMonto(boolean)+ "hh");
 
+        holder.btnproducto.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                ProductlistActivity activity = (ProductlistActivity) context;
+                Toast.makeText(context,"a continuación el producto", Toast.LENGTH_SHORT).show();
+                activity.selectProduct(position);
+
+            }
+        });
 
 //        holder.image.setImageBitmap(rowItem.getSmallBitMap());
         return convertView;
@@ -65,7 +77,3 @@ Context context;
 
 
 }
-
-
-
-

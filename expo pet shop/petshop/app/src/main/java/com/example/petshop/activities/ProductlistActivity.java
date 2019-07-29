@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.petshop.R;
 import com.example.petshop.adapters.ProductItemAdapters;
@@ -33,6 +35,21 @@ public class ProductlistActivity extends AppCompatActivity {
                 new ProductItemAdapters(this, items);
 
         listViewProducts.setAdapter(itemsAdapter) ;
+        listViewProducts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> adapter, View v, int position, long id) {
+                Toast.makeText(getApplicationContext(),"a continuación el producto",Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    public void selectProduct(int position) {
+        Product selItem = items.get(position);
 
+        if ( selItem != null ) {
+            Intent o = new Intent(ProductlistActivity.this, ProductActivity.class);
+            o.putExtra("productId", selItem.getId());
+
+            startActivity(o);
+            Log.d(Settings.DEBUG, "La aplicacion dijo: " + selItem.getName());
         }
     }
+}

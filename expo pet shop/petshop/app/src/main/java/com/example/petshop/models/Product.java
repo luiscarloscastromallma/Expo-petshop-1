@@ -30,11 +30,11 @@ public class Product {
         ArrayList<Product> list = new ArrayList<>();
         list.add(new Product(1, "Whiskas Pavo En Sobre 85 Gr", "Alimento balanceado ",
                 1, 80.00, 2));
-        list.add(new Product(1, "Alimento para perros 15kg", "Canbo Adulto ",
+        list.add(new Product(2, "Alimento para perros 15kg", "Canbo Adulto ",
                 1, 130.00, 2));
-        list.add(new Product(1, "Arena para gatos Golden Grey", "Alimento balanceado ",
+        list.add(new Product(3, "Arena para gatos Golden Grey", "Alimento balanceado ",
                 1, 180.00, 2));
-        list.add(new Product(1, "Antiparasitario Scalibor Collar 65 cm", "El collar Scalibor ",
+        list.add(new Product(4, "Antiparasitario Scalibor Collar 65 cm", "El collar Scalibor ",
                 1, 40.00, 2));
         return list;
     }

@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     String usuario =((EditText) findViewById(R.id.txtUsername)).getText().toString();
                     String paswoord =((EditText) findViewById(R.id.txtPassword)).getText().toString();
-                    if (usuario.equals("admin")&& paswoord.equals(("admmin")))
+                    if (usuario.equals("admin")&& paswoord.equals(("123456")))
                     {
                         Intent nuevoform = new Intent(LoginActivity.this,MainActivity.class);
                         startActivity(nuevoform);
